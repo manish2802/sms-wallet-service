@@ -18,6 +18,10 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
+       
+      - name: Install grpc contract
+        working-directory: sms-grpc-contract
+        run: mvn clean install -DskipTests       
 
       - name: Build application
         run: mvn clean package -DskipTests
