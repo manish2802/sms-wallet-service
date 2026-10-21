@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.professionalit.grpc";
+option java_outer_classname = "WalletProto";
+
+service WalletService {
+  rpc ValidateWallet (WalletRequest) returns (WalletResponse);
+}
+
+message WalletRequest {
+  int64 userId = 1;
+  double amount = 2;
+}
+
+message WalletResponse {
+  bool valid = 1;
+  string message = 2;
+}
