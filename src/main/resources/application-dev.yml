@@ -9,6 +9,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://sms-registry-server:8761/eureka/
+
 grpc:
   server:
     port: 9090
