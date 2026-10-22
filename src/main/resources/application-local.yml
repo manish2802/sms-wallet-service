@@ -1,0 +1,14 @@
+server:
+  port: 8081
+  
+spring:
+  application:
+    name: sms-wallet-service  
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka
+grpc:
+  server:
+    port: 9090
