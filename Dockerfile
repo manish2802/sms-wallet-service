@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY target/*.jar smswalletservice.jar
 
-EXPOSE 9001
+EXPOSE 8081
 
 ENTRYPOINT ["java","-jar","smswalletservice.jar"]
